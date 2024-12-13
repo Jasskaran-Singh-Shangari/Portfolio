@@ -21,7 +21,8 @@ Frameworks/Libraries: (List any frameworks or libraries you used, e.g., React, B
 Version Control: Managed with Git and hosted on GitHub.
 
 # 🚀 Live Demo
-Check out the live version of my portfolio here. (Replace # with your actual link.)
+Check out the live version of my portfolio here.
+[Click here to view the video](https://github.com/REBEL-OSUDA/Portfolio/blob/main/Portfolio/images/Portfolio%20gif.mp4)
 
 # 🗂️ Sections Overview
 Home: A welcoming landing page with a brief intro.
