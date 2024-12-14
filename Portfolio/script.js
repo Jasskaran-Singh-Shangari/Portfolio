@@ -2,7 +2,9 @@
 
 let link_lists=document.querySelectorAll(".link-list")
 let icon=document.querySelector(".navbar li i");
-
+let body=document.body;
+let greetings=document.querySelector("#Hero");
+let hexagons=document.querySelectorAll(".hexagon");
 
 //=======================================================================
 
@@ -30,14 +32,20 @@ icon.addEventListener("click", ()=>{
     if (icon.classList.contains("fa-sun")){
         icon.classList.remove("fa-sun");
         icon.classList.add("fa-moon");
-        document.body.style.backgroundColor="#fff";
+        body.style.backgroundColor="#fff";
+        greetings.classList.toggle("dark-mode");
+        hexagons.forEach((x)=>{
+            x.classList.toggle("dark-mode")
+        })
     }
     else {
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
-        document.body.style.backgroundColor="#000";
-
-
+        body.style.backgroundColor="#000";
+        greetings.classList.toggle("dark-mode");
+        hexagons.forEach((x)=>{
+            x.classList.toggle("dark-mode")
+        })
     }
 })
 
