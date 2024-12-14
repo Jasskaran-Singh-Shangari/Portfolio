@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
 :root{
+    --color1: black;
+    --color2: white;
+}
+
+.dark-mode{
     --color1: white;
     --color2: black;
 }
-
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: var(--j);
+    /* scroll-padding-top: var(--j); */
 }
 
 body {
     min-height: 200vh;
-    background-color: #000;
+    background-color: var(--color1);
 }
 abbr{
     text-decoration: none;
@@ -46,7 +52,7 @@ abbr{
     position: relative;
     width: 120px;
     height: 120px;
-    background-color: black;
+    background-color: var(--color1);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     margin: 2px;
     transition: 2s;
@@ -64,7 +70,7 @@ abbr{
     bottom: 4px;
     left: 4px;
     right: 4px;
-    background: linear-gradient(to right, rgb(41, 41, 41), #000);
+    background: linear-gradient(to right, rgb(41, 41, 41), var(--color1));
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
@@ -75,7 +81,8 @@ abbr{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.07);
+    /* background-color:var(--color1); */
+    /* background: rgba(255, 255, 255, 0.07); */
     pointer-events: none;
 }
 
@@ -83,6 +90,7 @@ header {
     position: absolute;
     z-index: 100; 
     margin: 10px;
+    width: 400px;
     transform: translateX(270%);
 }
 
@@ -93,6 +101,7 @@ a {
 }
 
 .navbar {
+    width: 400px;
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
@@ -128,12 +137,12 @@ li i:hover{
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--color2);
     font-size: 70px;
     font-weight: bolder;
     text-align: center;
     z-index: 10; 
-    background: rgba(0, 0, 0, 0); 
+    /* background: rgba(0, 0, 0, 0);  */
     padding: 20px;
     border-radius: 12px;
     min-height: 70vh;;
@@ -403,6 +412,7 @@ figure{
 .Signature{
     position: absolute;
     right:0;
+    bottom: 5px;
 }
 .copyright{
     position: absolute;
@@ -414,6 +424,7 @@ figcaption{
     color: white;
     position: absolute;
     right: 20px;
+    bottom: 0;
 }
 
 
