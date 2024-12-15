@@ -3,7 +3,6 @@ Welcome to my portfolio! This project showcases my skills, experience, and proje
 
 # ✨ Features
 Personal Bio: A brief introduction about who I am and what I do.
-Project Showcases: Highlights of my best work, complete with descriptions, technologies used, and links.
 Skills Section: A breakdown of my technical and soft skills.
 Interactive Animations: Eye-catching animations to make the site more engaging.
 Contact Me: An easy way to connect with me via email, LinkedIn, or other platforms.
@@ -11,13 +10,11 @@ Contact Me: An easy way to connect with me via email, LinkedIn, or other platfor
 # 🎯 Goals of This Project
 Present my work and capabilities in a professional and creative manner.
 Experiment with innovative animations to make the website stand out.
-Provide a seamless user experience for visitors.
 
 # 🛠️ Technologies Used
 HTML5: For the structure and layout.
 CSS3: For styling, animations, and responsive design.
-JavaScript: For interactivity and dynamic content.
-Frameworks/Libraries: (List any frameworks or libraries you used, e.g., React, Bootstrap, GSAP for animations, etc.)
+JavaScript: For interactivity.
 Version Control: Managed with Git and hosted on GitHub.
 
 # 🚀 Live Demo
