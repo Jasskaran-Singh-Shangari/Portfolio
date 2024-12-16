@@ -1,10 +1,13 @@
 // Initializing the required variables
 
-let link_lists=document.querySelectorAll(".link-list")
+let link_lists=document.querySelectorAll(".link-list");
 let icon=document.querySelector(".navbar li i");
 let body=document.body;
 let greetings=document.querySelector("#Hero");
 let hexagons=document.querySelectorAll(".hexagon");
+let pro_pic=document.querySelector("#Hero .profile-picture");
+let list_items=document.querySelectorAll(".navbar li");
+let a=document.querySelectorAll(".navbar li a");
 
 //=======================================================================
 
@@ -26,7 +29,7 @@ link_lists.forEach((x)=>{
     })
 })
 
-// LIGHT MODE AND DARK MODE FOR JUST THE HERO SECTION.
+// LIGHT MODE AND DARK MODE FOR THE "HERO" SECTION.
 
 icon.addEventListener("click", ()=>{
     if (icon.classList.contains("fa-sun")){
@@ -37,6 +40,13 @@ icon.addEventListener("click", ()=>{
         hexagons.forEach((x)=>{
             x.classList.toggle("dark-mode")
         })
+        pro_pic.classList.toggle("dark-mode")
+        list_items.forEach((x)=>{
+            x.classList.toggle("dark-mode");
+        })
+        a.forEach((x)=>{
+            x.classList.toggle("dark=mode");
+        })
     }
     else {
         icon.classList.remove("fa-moon");
@@ -45,6 +55,13 @@ icon.addEventListener("click", ()=>{
         greetings.classList.toggle("dark-mode");
         hexagons.forEach((x)=>{
             x.classList.toggle("dark-mode")
+        })
+        pro_pic.classList.toggle("dark-mode")
+        list_items.forEach((x)=>{
+            x.classList.toggle("dark-mode");
+        })
+        a.forEach((x)=>{
+            x.classList.toggle("dark=mode");
         })
     }
 })
